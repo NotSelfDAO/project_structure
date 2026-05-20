@@ -1,0 +1,122 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 436,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 438,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 448,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 457,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 458,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "include",
+			"paths" : 
+			[
+				"third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/httplib.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/httplib",
+			"paths" : 
+			[
+				"third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/httplibConfig.cmake",
+				"third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/httplibConfigVersion.cmake",
+				"third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/cmake/FindBrotli.cmake"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/httplib",
+			"exportName" : "httplibTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "httplib::@b3822863cded686b0be8",
+					"index" : 3
+				}
+			],
+			"paths" : 
+			[
+				"E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/Export/0c9c21465635b294edae171b02b1b3b9/httplibTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "share/doc/httplib",
+			"paths" : 
+			[
+				"third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/README.md"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "share/licenses/httplib",
+			"paths" : 
+			[
+				"third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/LICENSE"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build",
+		"source" : "third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
+	}
+}

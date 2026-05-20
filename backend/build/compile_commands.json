@@ -1,0 +1,50 @@
+[
+{
+  "directory": "E:/NotSelfDAO/app/pic_gallery/backend/build",
+  "command": "E:\\my_toolchains\\Scoop\\apps\\llvm\\current\\bin\\clang++.exe -IE:/NotSelfDAO/app/pic_gallery/backend -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -o CMakeFiles\\backend.dir\\main.cpp.obj -c E:\\NotSelfDAO\\app\\pic_gallery\\backend\\main.cpp",
+  "file": "E:/NotSelfDAO/app/pic_gallery/backend/main.cpp",
+  "output": "E:/NotSelfDAO/app/pic_gallery/backend/build/CMakeFiles/backend.dir/main.cpp.obj"
+},
+{
+  "directory": "E:/NotSelfDAO/app/pic_gallery/backend/build",
+  "command": "E:\\my_toolchains\\Scoop\\apps\\llvm\\current\\bin\\clang++.exe -DCPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO -IE:/NotSelfDAO/app/pic_gallery/backend/core -IE:/NotSelfDAO/app/pic_gallery/backend/core/registrar -IE:/NotSelfDAO/app/pic_gallery/backend/core/repository -IE:/NotSelfDAO/app/pic_gallery/backend/core/route -IE:/NotSelfDAO/app/pic_gallery/backend/core/task_manager -IE:/NotSelfDAO/app/pic_gallery/backend/core/transport -IE:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -o core\\CMakeFiles\\core.dir\\registrar\\AutoRegistrar.cpp.obj -c E:\\NotSelfDAO\\app\\pic_gallery\\backend\\core\\registrar\\AutoRegistrar.cpp",
+  "file": "E:/NotSelfDAO/app/pic_gallery/backend/core/registrar/AutoRegistrar.cpp",
+  "output": "E:/NotSelfDAO/app/pic_gallery/backend/build/core/CMakeFiles/core.dir/registrar/AutoRegistrar.cpp.obj"
+},
+{
+  "directory": "E:/NotSelfDAO/app/pic_gallery/backend/build",
+  "command": "E:\\my_toolchains\\Scoop\\apps\\llvm\\current\\bin\\clang++.exe -DCPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO -IE:/NotSelfDAO/app/pic_gallery/backend/core -IE:/NotSelfDAO/app/pic_gallery/backend/core/registrar -IE:/NotSelfDAO/app/pic_gallery/backend/core/repository -IE:/NotSelfDAO/app/pic_gallery/backend/core/route -IE:/NotSelfDAO/app/pic_gallery/backend/core/task_manager -IE:/NotSelfDAO/app/pic_gallery/backend/core/transport -IE:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -o core\\CMakeFiles\\core.dir\\registrar\\HierarchicalRegistry.cpp.obj -c E:\\NotSelfDAO\\app\\pic_gallery\\backend\\core\\registrar\\HierarchicalRegistry.cpp",
+  "file": "E:/NotSelfDAO/app/pic_gallery/backend/core/registrar/HierarchicalRegistry.cpp",
+  "output": "E:/NotSelfDAO/app/pic_gallery/backend/build/core/CMakeFiles/core.dir/registrar/HierarchicalRegistry.cpp.obj"
+},
+{
+  "directory": "E:/NotSelfDAO/app/pic_gallery/backend/build",
+  "command": "E:\\my_toolchains\\Scoop\\apps\\llvm\\current\\bin\\clang++.exe -DCPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO -IE:/NotSelfDAO/app/pic_gallery/backend/core -IE:/NotSelfDAO/app/pic_gallery/backend/core/registrar -IE:/NotSelfDAO/app/pic_gallery/backend/core/repository -IE:/NotSelfDAO/app/pic_gallery/backend/core/route -IE:/NotSelfDAO/app/pic_gallery/backend/core/task_manager -IE:/NotSelfDAO/app/pic_gallery/backend/core/transport -IE:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -o core\\CMakeFiles\\core.dir\\route\\RouteKey.cpp.obj -c E:\\NotSelfDAO\\app\\pic_gallery\\backend\\core\\route\\RouteKey.cpp",
+  "file": "E:/NotSelfDAO/app/pic_gallery/backend/core/route/RouteKey.cpp",
+  "output": "E:/NotSelfDAO/app/pic_gallery/backend/build/core/CMakeFiles/core.dir/route/RouteKey.cpp.obj"
+},
+{
+  "directory": "E:/NotSelfDAO/app/pic_gallery/backend/build",
+  "command": "E:\\my_toolchains\\Scoop\\apps\\llvm\\current\\bin\\clang++.exe -DCPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO -IE:/NotSelfDAO/app/pic_gallery/backend/core -IE:/NotSelfDAO/app/pic_gallery/backend/core/registrar -IE:/NotSelfDAO/app/pic_gallery/backend/core/repository -IE:/NotSelfDAO/app/pic_gallery/backend/core/route -IE:/NotSelfDAO/app/pic_gallery/backend/core/task_manager -IE:/NotSelfDAO/app/pic_gallery/backend/core/transport -IE:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -o core\\CMakeFiles\\core.dir\\route\\SymbolTable.cpp.obj -c E:\\NotSelfDAO\\app\\pic_gallery\\backend\\core\\route\\SymbolTable.cpp",
+  "file": "E:/NotSelfDAO/app/pic_gallery/backend/core/route/SymbolTable.cpp",
+  "output": "E:/NotSelfDAO/app/pic_gallery/backend/build/core/CMakeFiles/core.dir/route/SymbolTable.cpp.obj"
+},
+{
+  "directory": "E:/NotSelfDAO/app/pic_gallery/backend/build",
+  "command": "E:\\my_toolchains\\Scoop\\apps\\llvm\\current\\bin\\clang++.exe -DCPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO -IE:/NotSelfDAO/app/pic_gallery/backend/core -IE:/NotSelfDAO/app/pic_gallery/backend/core/registrar -IE:/NotSelfDAO/app/pic_gallery/backend/core/repository -IE:/NotSelfDAO/app/pic_gallery/backend/core/route -IE:/NotSelfDAO/app/pic_gallery/backend/core/task_manager -IE:/NotSelfDAO/app/pic_gallery/backend/core/transport -IE:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -o core\\CMakeFiles\\core.dir\\task_manager\\BackendTaskPool.cpp.obj -c E:\\NotSelfDAO\\app\\pic_gallery\\backend\\core\\task_manager\\BackendTaskPool.cpp",
+  "file": "E:/NotSelfDAO/app/pic_gallery/backend/core/task_manager/BackendTaskPool.cpp",
+  "output": "E:/NotSelfDAO/app/pic_gallery/backend/build/core/CMakeFiles/core.dir/task_manager/BackendTaskPool.cpp.obj"
+},
+{
+  "directory": "E:/NotSelfDAO/app/pic_gallery/backend/build",
+  "command": "E:\\my_toolchains\\Scoop\\apps\\llvm\\current\\bin\\clang++.exe -DCPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO -IE:/NotSelfDAO/app/pic_gallery/backend/core -IE:/NotSelfDAO/app/pic_gallery/backend/core/registrar -IE:/NotSelfDAO/app/pic_gallery/backend/core/repository -IE:/NotSelfDAO/app/pic_gallery/backend/core/route -IE:/NotSelfDAO/app/pic_gallery/backend/core/task_manager -IE:/NotSelfDAO/app/pic_gallery/backend/core/transport -IE:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -o core\\CMakeFiles\\core.dir\\task_manager\\TaskDispatcher.cpp.obj -c E:\\NotSelfDAO\\app\\pic_gallery\\backend\\core\\task_manager\\TaskDispatcher.cpp",
+  "file": "E:/NotSelfDAO/app/pic_gallery/backend/core/task_manager/TaskDispatcher.cpp",
+  "output": "E:/NotSelfDAO/app/pic_gallery/backend/build/core/CMakeFiles/core.dir/task_manager/TaskDispatcher.cpp.obj"
+},
+{
+  "directory": "E:/NotSelfDAO/app/pic_gallery/backend/build",
+  "command": "E:\\my_toolchains\\Scoop\\apps\\llvm\\current\\bin\\clang++.exe -DCPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO -IE:/NotSelfDAO/app/pic_gallery/backend/core -IE:/NotSelfDAO/app/pic_gallery/backend/core/registrar -IE:/NotSelfDAO/app/pic_gallery/backend/core/repository -IE:/NotSelfDAO/app/pic_gallery/backend/core/route -IE:/NotSelfDAO/app/pic_gallery/backend/core/task_manager -IE:/NotSelfDAO/app/pic_gallery/backend/core/transport -IE:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic -o core\\CMakeFiles\\core.dir\\transport\\HttpTaskServer.cpp.obj -c E:\\NotSelfDAO\\app\\pic_gallery\\backend\\core\\transport\\HttpTaskServer.cpp",
+  "file": "E:/NotSelfDAO/app/pic_gallery/backend/core/transport/HttpTaskServer.cpp",
+  "output": "E:/NotSelfDAO/app/pic_gallery/backend/build/core/CMakeFiles/core.dir/transport/HttpTaskServer.cpp.obj"
+}
+]

@@ -1,0 +1,70 @@
+{
+	"abstract" : true,
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries"
+		],
+		"files" : 
+		[
+			"third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 342,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 361,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"id" : "httplib::@b3822863cded686b0be8",
+	"interfaceCompileDependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "Threads::Threads::@b3822863cded686b0be8"
+		}
+	],
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "Threads::Threads::@b3822863cded686b0be8"
+		},
+		{
+			"backtrace" : 2,
+			"fragment" : "ws2_32"
+		},
+		{
+			"backtrace" : 2,
+			"fragment" : "crypt32"
+		}
+	],
+	"name" : "httplib",
+	"paths" : 
+	{
+		"build" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build",
+		"source" : "third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
+	},
+	"sources" : [],
+	"type" : "INTERFACE_LIBRARY"
+}

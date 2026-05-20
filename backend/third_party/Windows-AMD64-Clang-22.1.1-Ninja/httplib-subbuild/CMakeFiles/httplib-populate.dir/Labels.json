@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/CMakeFiles/httplib-populate"
+		},
+		{
+			"file" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/CMakeFiles/httplib-populate.rule"
+		},
+		{
+			"file" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/CMakeFiles/httplib-populate-complete.rule"
+		},
+		{
+			"file" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-build.rule"
+		},
+		{
+			"file" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-configure.rule"
+		},
+		{
+			"file" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-download.rule"
+		},
+		{
+			"file" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-install.rule"
+		},
+		{
+			"file" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-mkdir.rule"
+		},
+		{
+			"file" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-patch.rule"
+		},
+		{
+			"file" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-test.rule"
+		},
+		{
+			"file" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"httplib-populate"
+		],
+		"name" : "httplib-populate"
+	}
+}

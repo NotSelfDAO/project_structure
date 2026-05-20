@@ -1,0 +1,12 @@
+# ninja log v7
+4	50	8008954346631457	E:/NotSelfDAO/app/pic_gallery/backend/build/CMakeFiles/cmake.verify_globs	712aedf628e5e945
+59	692	8008953343493045	core/CMakeFiles/core.dir/route/RouteKey.cpp.obj	69a52d3a6ff95b97
+75	863	8008953343683603	core/CMakeFiles/core.dir/task_manager/BackendTaskPool.cpp.obj	deb4ac45b72bc9ca
+66	929	8008953343590845	core/CMakeFiles/core.dir/route/SymbolTable.cpp.obj	f64c8feb39501dc1
+40	920	8008953343332444	core/CMakeFiles/core.dir/registrar/AutoRegistrar.cpp.obj	7fb7edd5f8ffa12d
+82	923	8008953343715564	core/CMakeFiles/core.dir/task_manager/TaskDispatcher.cpp.obj	f4d00130d4dfd5da
+51	1044	8008953343332444	core/CMakeFiles/core.dir/registrar/HierarchicalRegistry.cpp.obj	17cdd3c03ad33ca5
+90	1282	8008948531532896	CMakeFiles/backend.dir/main.cpp.obj	11dd53baba752d04
+89	4769	8008953343829664	core/CMakeFiles/core.dir/transport/HttpTaskServer.cpp.obj	70ec848b3b8388ae
+4769	4898	8008953390623116	lib/core.lib	72ded948ef21c9de
+4899	5159	8008953391855910	bin/backend.exe	7e6776bc84eb2cd

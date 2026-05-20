@@ -1,0 +1,19 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build",
+		"source" : "third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src"
+	}
+}
