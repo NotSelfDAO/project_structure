@@ -1,20 +1,38 @@
 #! usr/bin/env lua
 --copy.lua
 local copy = {}
+local path_analyse = require("base.path_analyse")
+
+local platform = path_analyse.get_platform()
+
+local function ensure_parent_dir(file_path)
+    local parent = file_path:match("^(.*)[/\\][^/\\]+$")
+    if not parent or parent == "" then
+        return
+    end
+
+    if platform == "windows" then
+        os.execute('mkdir "' .. parent .. '" >NUL 2>NUL')
+    else
+        os.execute('mkdir -p "' .. parent .. '"')
+    end
+end
+
 ---拷贝单个目录
 ---@param fromPath string
 ---@param toPath string
 function copy.copySingleFile(fromPath, toPath)
     local fromFile, err1 = io.open(fromPath, "r")
     if not fromFile then 
-        io:write("[Lua] Error opening source file: " .. err1 .. "\n")
-        io:flush()
+        io.write("[Lua] Error opening source file: " .. err1 .. "\n")
+        io.flush()
         return
     end
+    ensure_parent_dir(toPath)
     local toFile, err2 = io.open(toPath, "w")
     if not toFile then
-        io:write("[Lua] Error opening destination file: " .. err2 .. "\n")
-        io:flush()
+        io.write("[Lua] Error opening destination file: " .. err2 .. "\n")
+        io.flush()
         fromFile:close()
         return
     end
@@ -44,24 +62,24 @@ local function setPathPairs()
     clearAllPaths()
     local isrunning = true
     while isrunning do
-        io:write("[Lua] Enter source file path (or 'done' to finish): ")
-        io:flush()
+        io.write("[Lua] Enter source file path (or 'done' to finish): ")
+        io.flush()
         local fromPath = io.read()
         while(type(fromPath) ~= "string") do
-            io:write("[Lua] Invalid input. Please enter a valid file path.\n")
-            io:flush()
+            io.write("[Lua] Invalid input. Please enter a valid file path.\n")
+            io.flush()
             fromPath = io.read()
         end
 
         if fromPath == "done" then
             isrunning = false
         else
-            io:write("[Lua] Enter destination file path: ")
-            io:flush()
+            io.write("[Lua] Enter destination file path: ")
+            io.flush()
             local toPath = io.read()
             while(type(toPath) ~= "string") do
-                io:write("[Lua] Invalid input. Please enter a valid file path.\n")
-                io:flush()
+                io.write("[Lua] Invalid input. Please enter a valid file path.\n")
+                io.flush()
                 toPath = io.read()
             end
 

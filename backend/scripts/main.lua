@@ -1,6 +1,26 @@
 #! /usr/bin/env lua
 -- main.lua
 
+-- 1. 获取当前正在执行的脚本路径 (arg[0] 存储着启动命令)
+-- 如果你执行的是 lua my_project/main.lua，那么 arg[0] 就是 "my_project/main.lua"
+local script_path = arg[0]
+
+-- 2. 提取出该脚本所在的父目录
+-- 匹配最后一个斜杠之前的所有文本
+local script_dir = script_path:match("(.*)[/\\]") 
+
+if script_dir then
+    -- 3. 核心魔法：将该目录动态织入到 Lua 的物理位置计算引擎中
+    -- 注意末尾的分号和问号，代表优先去脚本所在目录下的各个拓扑位寻找
+    package.path = string.format("%s/?.lua;%s/?/init.lua;", script_dir, script_dir) .. package.path
+end
+
+-- ============================================================================
+-- 4. 此时，无论你在哪条路径下唤起该脚本，require 都能精准命中同目录下的模块！
+-- ============================================================================
+
+local path_analyse = require("base.path_analyse")
+
 local gateway = require("gateway")
 
 local pagetype = {
@@ -33,8 +53,8 @@ START
 
 local function page_welcome_controller()
     clear_terminal()
-    io:write(page_welcome)
-    io:flush()
+    io.write(page_welcome)
+    io.flush()
     ---use . or :
 
     local tmp = ""
@@ -67,50 +87,50 @@ local function page_set_params_controller()
         root_path = "",
         repo_root_path = ""
     }
-    io:write(page_set_params)
-    io:flush()
+    io.write(page_set_params)
+    io.flush()
     local is_project_name_right = false
     while not is_project_name_right do
-        io:write(page_set_params_project_name)
-        io:flush()
+        io.write(page_set_params_project_name)
+        io.flush()
         local tmp_project_name = io.read()
         if tmp_project_name ~= "" then
             params.project_name = tmp_project_name
             is_project_name_right = true
         else
-            io:write("Project name cannot be empty. Please enter a valid project name.\n")
-            io:flush()
+            io.write("Project name cannot be empty. Please enter a valid project name.\n")
+            io.flush()
         end
     end
 
     local is_project_version_right = false
     while not is_project_version_right do
-        io:write(page_set_params_project_version)
-        io:flush()
+        io.write(page_set_params_project_version)
+        io.flush()
         local tmp_project_version = io.read()
         if tmp_project_version ~= "" then
             params.project_version = tmp_project_version
             is_project_version_right = true
         else
-            io:write("Project version cannot be empty. Please enter a valid project version.\n")
-            io:flush()
+            io.write("Project version cannot be empty. Please enter a valid project version.\n")
+            io.flush()
         end
     end
 
     local is_root_path_right = false
     while not is_root_path_right do
-        io:write(page_set_params_root_path)
-        io:flush()
+        io.write(page_set_params_root_path)
+        io.flush()
         local tmp_root_path = io.read()
         if tmp_root_path ~= "" then
             params.root_path = tmp_root_path
             is_root_path_right = true
         else
-            io:write("Root path cannot be empty. Please enter a valid root path.\n")
-            io:flush()
+            io.write("Root path cannot be empty. Please enter a valid root path.\n")
+            io.flush()
         end
     end
-    gateway.initAll(params.project_name, params.project_version, params.root_path, params.repo_root_path)
+    gateway.initAll(params.project_name, params.project_version, params.root_path, path_analyse.join("E:\\NotSelfDAO\\app\\pic_gallery\\backend"))
     return pagetype.choosing
 end
 
@@ -122,8 +142,8 @@ this function has not been implemented yet, please wait for the next version
 
 local function page_building_controller()
     clear_terminal()
-    io:write(page_building)
-    io:flush()
+    io.write(page_building)
+    io.flush()
     return pagetype.choosing
 end
 
@@ -135,8 +155,8 @@ this function has not been implemented yet, please wait for the next version
 
 local function page_compiling_controller()
     clear_terminal()
-    io:write(page_compiling)
-    io:flush()
+    io.write(page_compiling)
+    io.flush()
     return pagetype.choosing
 end
 
@@ -149,8 +169,8 @@ this function has not been implemented yet, please wait for the next version
 
 local function page_debugging_controller()
     clear_terminal()
-    io:write(page_debugging)
-    io:flush()
+    io.write(page_debugging)
+    io.flush()
     return pagetype.choosing
 end
 
@@ -172,11 +192,11 @@ pleasing type the number to choose the function you want to execute:
 
 local function page_choosing_controller()
     clear_terminal()
-    io:write(page_choosing)
-    io:flush()
+    io.write(page_choosing)
+    io.flush()
     while true do
-        io:write("Please enter the number corresponding to your choice: ")
-        io:flush()
+        io.write("Please enter the number corresponding to your choice: ")
+        io.flush()
 
         local choice = io.read()
         if choice == "1" then
@@ -188,8 +208,8 @@ local function page_choosing_controller()
         elseif choice == "4" then
             return pagetype.exiting
         else
-            io:write("Invalid choice. Please enter a valid number.\n")
-            io:flush()
+            io.write("Invalid choice. Please enter a valid number.\n")
+            io.flush()
         end
     end
 end
@@ -222,8 +242,8 @@ local function controller()
             page = page_choosing_controller()
         elseif(page == pagetype.exiting) then
             clear_terminal()
-            io:write("Thank you for using the backend structure generator. Goodbye!\n")
-            io:flush()
+            io.write("Thank you for using the backend structure generator. Goodbye!\n")
+            io.flush()
             break
         end
     end
@@ -234,4 +254,6 @@ function main.init()
     controller()
 end
 
-return main.init()
+main.init()
+
+return main

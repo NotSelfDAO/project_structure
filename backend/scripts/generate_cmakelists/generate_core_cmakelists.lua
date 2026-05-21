@@ -2,17 +2,20 @@
 -- generate_core_cmakelists.lua
 
 local generate_core_cmakelists = {}
+
+local path_analyse = require("base.path_analyse")
+
 ---生成核心区域cmakelist
 ---@param project_name_arg string
 ---@param project_version_arg string
 ---@param root_path_arg string
 function generate_core_cmakelists.generateCore(project_name_arg, project_version_arg, root_path_arg)
-    io:write("[Lua] Generating core CMakeLists.txt files...\n")
-    io:flush()
-    local file,err = io.open(root_path_arg .. "/core/CMakeLists.txt", "w")
+    io.write("[Lua] Generating core CMakeLists.txt files...\n")
+    io.flush()
+    local file,err = io.open(path_analyse.join(root_path_arg, "core", "CMakeLists.txt"), "w")
     if not file then    
-        io:write("[Lua] Error opening file: " .. err .. "\n")
-        io:flush()
+        io.write("[Lua] Error opening file: " .. err .. "\n")
+        io.flush()
         return
     end
     file:write(string.format([[
@@ -95,8 +98,8 @@ endforeach()
         os.date("%Y-%m-%d %H:%M:%S")
     ))
     file:close()
-    io:write("[Lua] core CMakeLists.txt files generated successfully.\n")
-    io:flush()
+    io.write("[Lua] core CMakeLists.txt files generated successfully.\n")
+    io.flush()
 end
 
 return generate_core_cmakelists

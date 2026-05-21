@@ -3,17 +3,19 @@
 
 local generate_root_cmakelist = {}
 
+local path_analyse = require("base.path_analyse")
+
 ---生成根目录的cmakelists
 ---@param project_name_arg string
 ---@param project_version_arg string
 ---@param root_path_arg string
 function generate_root_cmakelist.generateRoot(project_name_arg, project_version_arg, root_path_arg)
-    io:write("[Lua] Generating root CMakeLists.txt files...\n")
-    io:flush()
-    local file,err = io.open(root_path_arg .. "/CMakeLists.txt", "w")
+    io.write("[Lua] Generating root CMakeLists.txt files...\n")
+    io.flush()
+    local file,err = io.open(path_analyse.join(root_path_arg, "CMakeLists.txt"), "w")
     if not file then
-        io:write("[Lua] Error opening file: " .. err .. "\n")
-        io:flush()
+        io.write("[Lua] Error opening file: " .. err .. "\n")
+        io.flush()
         return
     end
     file:write(string.format([[
@@ -95,8 +97,8 @@ add_subdirectory(domain)
     project_name_arg
     ))
     file:close()
-    io:write("[Lua] root CMakeLists.txt files generated successfully.\n")
-    io:flush()
+    io.write("[Lua] root CMakeLists.txt files generated successfully.\n")
+    io.flush()
 end
 
 return generate_root_cmakelist

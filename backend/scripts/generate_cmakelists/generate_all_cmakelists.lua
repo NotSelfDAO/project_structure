@@ -9,21 +9,24 @@ local params = {
     root_path = ""
 }
 
-local generate_root_cmakelist = require("backend.scripts.generate_cmakelists.generate_root_cmakelists")
+local generate_root_cmakelist = require("generate_cmakelists.generate_root_cmakelists")
 
-local generate_core_cmakelists = require("backend.scripts.generate_cmakelists.generate_core_cmakelists")
+local generate_core_cmakelists = require("generate_cmakelists.generate_core_cmakelists")
 
-local generate_domain_cmakelists = require("backend.scripts.generate_cmakelists.generate_domain_cmakelists")
+local generate_domain_cmakelists = require("generate_cmakelists.generate_domain_cmakelists")
+
+local generate_cmake = require("generate_cmakelists.generate_cmake")
 
 ---生成cmakelist
 local function generateAll()
-    io:write("[Lua] Generating all CMakeLists.txt files...\n")
-    io:flush()
+    io.write("[Lua] Generating all CMakeLists.txt files...\n")
+    io.flush()
     generate_root_cmakelist.generateRoot(params.project_name, params.project_version, params.root_path)
     generate_core_cmakelists.generateCore(params.project_name, params.project_version, params.root_path)
     generate_domain_cmakelists.generateDomain(params.project_name, params.project_version, params.root_path)
-    io:write("[Lua] All CMakeLists.txt files generated successfully.\n")
-    io:flush()
+    generate_cmake.generate(params.root_path)
+    io.write("[Lua] All CMakeLists.txt files generated successfully.\n")
+    io.flush()
 end
 
 ---检查构建cmakelists的参数是否符合规范

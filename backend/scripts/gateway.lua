@@ -1,6 +1,7 @@
 #! /usr/bin/env lua
 -- gateway.lua
 local gateway = {}
+local path_analyse = require("base.path_analyse")
 
 local params = {
     project_name = "",
@@ -24,14 +25,15 @@ end
 ---项目文件初始化
 function gateway.initAll(project_name_arg, project_version_arg, root_path_arg, repo_root_path_arg)
     setParams(project_name_arg, project_version_arg, root_path_arg, repo_root_path_arg)
+    local project_root = path_analyse.join(params.root_path, params.project_name)
     -- 生成cmakelist
     -- build项目
     -- 编译
     -- debug
     -- running
     gateway.initFileStruct(params.project_name, params.root_path)
-    gateway.initCoreCode(params.repo_root_path, params.project_name, params.root_path)
-    gateway.initCmakelists(params.project_name, params.project_version, params.root_path)
+    gateway.initCoreCode(params.repo_root_path, params.project_name, project_root)
+    gateway.initCmakelists(params.project_name, params.project_version, project_root)
 end
 
 local generate_file_struct = require("generate_file_struct.generate_file_struct")
