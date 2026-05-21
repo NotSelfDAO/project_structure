@@ -119,7 +119,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "e:/NotSelfDAO/app/pic_gallery/backend/build"
+			"value" : "e:/NotSelfDAO/app/project_structure/backend/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -338,18 +338,6 @@
 			"value" : "-O2 -DNDEBUG"
 		},
 		{
-			"name" : "CMAKE_CXX_STANDARD",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
-				}
-			],
-			"type" : "UNINITIALIZED",
-			"value" : "20"
-		},
-		{
 			"name" : "CMAKE_CXX_STANDARD_LIBRARIES",
 			"properties" : 
 			[
@@ -535,7 +523,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/NotSelfDAO/app/pic_gallery/backend/build/CMakeFiles/pkgRedirects"
+			"value" : "E:/NotSelfDAO/app/project_structure/backend/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -631,7 +619,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "E:/NotSelfDAO/app/pic_gallery/backend"
+			"value" : "E:/NotSelfDAO/app/project_structure/backend"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1763,7 +1751,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "E:/NotSelfDAO/app/pic_gallery/backend/build/_deps"
+			"value" : "E:/NotSelfDAO/app/project_structure/backend/build/_deps"
 		},
 		{
 			"name" : "FETCHCONTENT_FULLY_DISCONNECTED",
@@ -2423,7 +2411,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/NotSelfDAO/app/pic_gallery/backend/build"
+			"value" : "E:/NotSelfDAO/app/project_structure/backend/build"
 		},
 		{
 			"name" : "backend_IS_TOP_LEVEL",
@@ -2447,7 +2435,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/NotSelfDAO/app/pic_gallery/backend"
+			"value" : "E:/NotSelfDAO/app/project_structure/backend"
 		},
 		{
 			"name" : "httplib_BINARY_DIR",
@@ -2459,19 +2447,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build"
-		},
-		{
-			"name" : "httplib_INIT_DONE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "httplib init once"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build"
 		},
 		{
 			"name" : "httplib_IS_TOP_LEVEL",
@@ -2495,7 +2471,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
+			"value" : "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
 		},
 		{
 			"name" : "nlohmann_json_BINARY_DIR",
@@ -2507,19 +2483,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build"
-		},
-		{
-			"name" : "nlohmann_json_INIT_DONE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "nlohmann_json init once"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : "ON"
+			"value" : "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build"
 		},
 		{
 			"name" : "nlohmann_json_IS_TOP_LEVEL",
@@ -2543,7 +2507,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src"
+			"value" : "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src"
 		},
 		{
 			"name" : "zstd_DIR",

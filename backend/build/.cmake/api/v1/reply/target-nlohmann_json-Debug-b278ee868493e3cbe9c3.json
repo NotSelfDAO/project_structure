@@ -29,11 +29,11 @@
 		"major" : 2,
 		"minor" : 10
 	},
-	"id" : "nlohmann_json::@93a59baed9447ca5f7d3",
+	"id" : "nlohmann_json::@a32a20bbfc663f3cc0bb",
 	"name" : "nlohmann_json",
 	"paths" : 
 	{
-		"build" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build",
+		"build" : "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build",
 		"source" : "third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src"
 	},
 	"sources" : [],

@@ -83,13 +83,13 @@
 			"exportTargets" : 
 			[
 				{
-					"id" : "httplib::@b3822863cded686b0be8",
+					"id" : "httplib::@764d52a40d991454ee5f",
 					"index" : 3
 				}
 			],
 			"paths" : 
 			[
-				"E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/Export/0c9c21465635b294edae171b02b1b3b9/httplibTargets.cmake"
+				"E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/Export/0c9c21465635b294edae171b02b1b3b9/httplibTargets.cmake"
 			],
 			"type" : "export"
 		},
@@ -116,7 +116,7 @@
 	],
 	"paths" : 
 	{
-		"build" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build",
+		"build" : "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build",
 		"source" : "third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
 	}
 }

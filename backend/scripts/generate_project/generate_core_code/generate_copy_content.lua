@@ -1,7 +1,7 @@
 #! usr/bin/env lua
 --copy.lua
 local copy = {}
-local path_analyse = require("base.path_analyse")
+local path_analyse = require("backend.scripts.base.path_analyse")
 
 local platform = path_analyse.get_platform()
 

@@ -3,11 +3,11 @@
 
 cmake_minimum_required(VERSION ${CMAKE_VERSION}) # this file comes with cmake
 
-if(EXISTS "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitclone-lastrun.txt" AND EXISTS "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitinfo.txt" AND
-  "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitclone-lastrun.txt" IS_NEWER_THAN "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitinfo.txt")
+if(EXISTS "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitclone-lastrun.txt" AND EXISTS "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitinfo.txt" AND
+  "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitclone-lastrun.txt" IS_NEWER_THAN "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitinfo.txt")
   message(VERBOSE
     "Avoiding repeated git clone, stamp file is up to date: "
-    "'E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitclone-lastrun.txt'"
+    "'E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitclone-lastrun.txt'"
   )
   return()
 endif()
@@ -22,12 +22,12 @@ else()
 endif()
 
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E rm -rf "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
+  COMMAND ${CMAKE_COMMAND} -E rm -rf "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to remove directory: 'E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src'")
+  message(FATAL_ERROR "Failed to remove directory: 'E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src'")
 endif()
 
 # try the clone 3 times in case there is an odd git clone issue
@@ -37,7 +37,7 @@ while(error_code AND number_of_tries LESS 3)
   execute_process(
     COMMAND "E:/my_toolchains/Scoop/apps/git/current/cmd/git.exe"
             clone --no-checkout --config "advice.detachedHead=false" "https://github.com/yhirose/cpp-httplib.git" "httplib-src"
-    WORKING_DIRECTORY "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja"
+    WORKING_DIRECTORY "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
   )
@@ -53,7 +53,7 @@ endif()
 execute_process(
   COMMAND "E:/my_toolchains/Scoop/apps/git/current/cmd/git.exe"
           checkout "v0.45.0" --
-  WORKING_DIRECTORY "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
+  WORKING_DIRECTORY "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
@@ -66,22 +66,22 @@ if(init_submodules)
   execute_process(
     COMMAND "E:/my_toolchains/Scoop/apps/git/current/cmd/git.exe" 
             submodule update --recursive --init 
-    WORKING_DIRECTORY "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
+    WORKING_DIRECTORY "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
     RESULT_VARIABLE error_code
     ${maybe_show_command}
   )
 endif()
 if(error_code)
-  message(FATAL_ERROR "Failed to update submodules in: 'E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src'")
+  message(FATAL_ERROR "Failed to update submodules in: 'E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src'")
 endif()
 
 # Complete success, update the script-last-run stamp file:
 #
 execute_process(
-  COMMAND ${CMAKE_COMMAND} -E copy "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitinfo.txt" "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitclone-lastrun.txt"
+  COMMAND ${CMAKE_COMMAND} -E copy "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitinfo.txt" "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitclone-lastrun.txt"
   RESULT_VARIABLE error_code
   ${maybe_show_command}
 )
 if(error_code)
-  message(FATAL_ERROR "Failed to copy script-last-run stamp file: 'E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitclone-lastrun.txt'")
+  message(FATAL_ERROR "Failed to copy script-last-run stamp file: 'E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/src/httplib-populate-stamp/httplib-populate-gitclone-lastrun.txt'")
 endif()

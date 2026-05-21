@@ -121,7 +121,7 @@ rule CXX_STATIC_LIBRARY_LINKER__core_Debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe --regenerate-during-build -SE:\NotSelfDAO\app\pic_gallery\backend -BE:\NotSelfDAO\app\pic_gallery\backend\build
+  command = E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe --regenerate-during-build -SE:\NotSelfDAO\app\project_structure\backend -BE:\NotSelfDAO\app\project_structure\backend\build
   description = Re-running CMake...
   generator = 1
 
@@ -130,7 +130,7 @@ rule RERUN_CMAKE
 # Rule for re-checking globbed directories.
 
 rule VERIFY_GLOBS
-  command = E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -P E:\NotSelfDAO\app\pic_gallery\backend\build\CMakeFiles\VerifyGlobs.cmake
+  command = E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -P E:\NotSelfDAO\app\project_structure\backend\build\CMakeFiles\VerifyGlobs.cmake
   description = Re-checking globbed directories...
   generator = 1
 

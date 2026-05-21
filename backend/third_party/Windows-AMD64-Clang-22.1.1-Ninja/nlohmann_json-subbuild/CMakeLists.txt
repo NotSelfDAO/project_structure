@@ -28,8 +28,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(nlohmann_json-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/nlohmann/json.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "v3.12.0"
-                    SOURCE_DIR          "E:/NotSelfDAO/app/pic_gallery/backend/third_party//Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src"
-                    BINARY_DIR          "E:/NotSelfDAO/app/pic_gallery/backend/third_party//Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build"
+                    SOURCE_DIR          "E:/NotSelfDAO/app/project_structure/backend/third_party//Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src"
+                    BINARY_DIR          "E:/NotSelfDAO/app/project_structure/backend/third_party//Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

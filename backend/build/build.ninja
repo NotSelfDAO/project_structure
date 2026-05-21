@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = E$:/NotSelfDAO/app/pic_gallery/backend/build/
+cmake_ninja_workdir = E$:/NotSelfDAO/app/project_structure/backend/build/
 # =============================================================================
 # Object build statements for EXECUTABLE target backend
 
@@ -49,11 +49,11 @@ cmake_ninja_workdir = E$:/NotSelfDAO/app/pic_gallery/backend/build/
 
 build cmake_object_order_depends_target_backend: phony || cmake_object_order_depends_target_core
 
-build CMakeFiles/backend.dir/main.cpp.obj: CXX_COMPILER__backend_unscanned_Debug E$:/NotSelfDAO/app/pic_gallery/backend/main.cpp || cmake_object_order_depends_target_backend
+build CMakeFiles/backend.dir/main.cpp.obj: CXX_COMPILER__backend_unscanned_Debug E$:/NotSelfDAO/app/project_structure/backend/main.cpp || cmake_object_order_depends_target_backend
   CONFIG = Debug
   DEP_FILE = CMakeFiles\backend.dir\main.cpp.obj.d
   FLAGS = -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic
-  INCLUDES = -IE:/NotSelfDAO/app/pic_gallery/backend
+  INCLUDES = -IE:/NotSelfDAO/app/project_structure/backend
   OBJECT_DIR = CMakeFiles\backend.dir
   OBJECT_FILE_DIR = CMakeFiles\backend.dir
   TARGET_COMPILE_PDB = CMakeFiles\backend.dir\
@@ -87,7 +87,7 @@ build bin/backend.exe: CXX_EXECUTABLE_LINKER__backend_Debug CMakeFiles/backend.d
 # Utility command for package
 
 build CMakeFiles/package.util: CUSTOM_COMMAND all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackConfig.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackConfig.cmake"
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -99,7 +99,7 @@ build package: phony CMakeFiles/package.util
 # Utility command for package_source
 
 build CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackSourceConfig.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackSourceConfig.cmake"
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -111,7 +111,7 @@ build package_source: phony CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake-gui.exe -SE:\NotSelfDAO\app\pic_gallery\backend -BE:\NotSelfDAO\app\pic_gallery\backend\build"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake-gui.exe -SE:\NotSelfDAO\app\project_structure\backend -BE:\NotSelfDAO\app\project_structure\backend\build"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -123,7 +123,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe --regenerate-during-build -SE:\NotSelfDAO\app\pic_gallery\backend -BE:\NotSelfDAO\app\pic_gallery\backend\build"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe --regenerate-during-build -SE:\NotSelfDAO\app\project_structure\backend -BE:\NotSelfDAO\app\project_structure\backend\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -141,7 +141,7 @@ build list_install_components: phony
 # Utility command for install
 
 build CMakeFiles/install.util: CUSTOM_COMMAND all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -153,7 +153,7 @@ build install: phony CMakeFiles/install.util
 # Utility command for install/local
 
 build CMakeFiles/install/local.util: CUSTOM_COMMAND all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -165,7 +165,7 @@ build install/local: phony CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build CMakeFiles/install/strip.util: CUSTOM_COMMAND all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -174,197 +174,197 @@ build install/strip: phony CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/NotSelfDAO/app/pic_gallery/backend/cmake/generated_third_party_config.cmake
+# E:/NotSelfDAO/app/project_structure/backend/cmake/generated_third_party_config.cmake
 # =============================================================================
 
 
 #############################################
 # Utility command for package
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/package.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackConfig.cmake"
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/package.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackConfig.cmake"
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/package: phony E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/package.util
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/package: phony E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/package.util
 
 
 #############################################
 # Utility command for package_source
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackSourceConfig.cmake"
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackSourceConfig.cmake"
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/package_source: phony E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/package_source.util
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/package_source: phony E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/package_source.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\httplib-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake-gui.exe -SE:\NotSelfDAO\app\pic_gallery\backend -BE:\NotSelfDAO\app\pic_gallery\backend\build"
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\httplib-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake-gui.exe -SE:\NotSelfDAO\app\project_structure\backend -BE:\NotSelfDAO\app\project_structure\backend\build"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/edit_cache: phony E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/edit_cache.util
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/edit_cache: phony E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\httplib-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe --regenerate-during-build -SE:\NotSelfDAO\app\pic_gallery\backend -BE:\NotSelfDAO\app\pic_gallery\backend\build"
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\httplib-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe --regenerate-during-build -SE:\NotSelfDAO\app\project_structure\backend -BE:\NotSelfDAO\app\project_structure\backend\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/rebuild_cache: phony E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/rebuild_cache.util
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/rebuild_cache: phony E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/list_install_components: phony
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/install.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\httplib-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -P cmake_install.cmake"
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/install.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\httplib-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/install: phony E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/install.util
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/install: phony E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/install/local.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\httplib-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/install/local.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\httplib-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/install/local: phony E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/install/local.util
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/install/local: phony E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\httplib-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\httplib-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/install/strip: phony E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/install/strip.util
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/install/strip: phony E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/NotSelfDAO/app/pic_gallery/backend/cmake/generated_third_party_config.cmake
+# E:/NotSelfDAO/app/project_structure/backend/cmake/generated_third_party_config.cmake
 # =============================================================================
 
 
 #############################################
 # Utility command for package
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/package.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackConfig.cmake"
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/package.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackConfig.cmake"
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/package: phony E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/package.util
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/package: phony E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/package.util
 
 
 #############################################
 # Utility command for package_source
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackSourceConfig.cmake"
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/package_source.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackSourceConfig.cmake"
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/package_source: phony E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/package_source.util
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/package_source: phony E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/package_source.util
 
 
 #############################################
 # Utility command for edit_cache
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\nlohmann_json-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake-gui.exe -SE:\NotSelfDAO\app\pic_gallery\backend -BE:\NotSelfDAO\app\pic_gallery\backend\build"
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\nlohmann_json-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake-gui.exe -SE:\NotSelfDAO\app\project_structure\backend -BE:\NotSelfDAO\app\project_structure\backend\build"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/edit_cache: phony E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/edit_cache.util
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/edit_cache: phony E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/edit_cache.util
 
 
 #############################################
 # Utility command for rebuild_cache
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\nlohmann_json-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe --regenerate-during-build -SE:\NotSelfDAO\app\pic_gallery\backend -BE:\NotSelfDAO\app\pic_gallery\backend\build"
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\nlohmann_json-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe --regenerate-during-build -SE:\NotSelfDAO\app\project_structure\backend -BE:\NotSelfDAO\app\project_structure\backend\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/rebuild_cache: phony E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/rebuild_cache.util
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/rebuild_cache: phony E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/rebuild_cache.util
 
 
 #############################################
 # Utility command for list_install_components
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/list_install_components: phony
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/list_install_components: phony
 
 
 #############################################
 # Utility command for install
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/install.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\nlohmann_json-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -P cmake_install.cmake"
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/install.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\nlohmann_json-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/install: phony E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/install.util
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/install: phony E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/install.util
 
 
 #############################################
 # Utility command for install/local
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/install/local.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\nlohmann_json-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/install/local.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\nlohmann_json-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/install/local: phony E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/install/local.util
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/install/local: phony E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/install/local.util
 
 
 #############################################
 # Utility command for install/strip
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\nlohmann_json-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/install/strip.util: CUSTOM_COMMAND E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/all
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\nlohmann_json-build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/install/strip: phony E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/install/strip.util
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/install/strip: phony E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/CMakeFiles/install/strip.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# E:/NotSelfDAO/app/pic_gallery/backend/CMakeLists.txt
+# E:/NotSelfDAO/app/project_structure/backend/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -376,84 +376,84 @@ build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.
 
 build cmake_object_order_depends_target_core: phony || .
 
-build core/CMakeFiles/core.dir/registrar/AutoRegistrar.cpp.obj: CXX_COMPILER__core_unscanned_Debug E$:/NotSelfDAO/app/pic_gallery/backend/core/registrar/AutoRegistrar.cpp || cmake_object_order_depends_target_core
+build core/CMakeFiles/core.dir/registrar/AutoRegistrar.cpp.obj: CXX_COMPILER__core_unscanned_Debug E$:/NotSelfDAO/app/project_structure/backend/core/registrar/AutoRegistrar.cpp || cmake_object_order_depends_target_core
   CONFIG = Debug
   DEFINES = -DCPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO
   DEP_FILE = core\CMakeFiles\core.dir\registrar\AutoRegistrar.cpp.obj.d
   FLAGS = -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic
-  INCLUDES = -IE:/NotSelfDAO/app/pic_gallery/backend/core -IE:/NotSelfDAO/app/pic_gallery/backend/core/registrar -IE:/NotSelfDAO/app/pic_gallery/backend/core/repository -IE:/NotSelfDAO/app/pic_gallery/backend/core/route -IE:/NotSelfDAO/app/pic_gallery/backend/core/task_manager -IE:/NotSelfDAO/app/pic_gallery/backend/core/transport -IE:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
+  INCLUDES = -IE:/NotSelfDAO/app/project_structure/backend/core -IE:/NotSelfDAO/app/project_structure/backend/core/registrar -IE:/NotSelfDAO/app/project_structure/backend/core/repository -IE:/NotSelfDAO/app/project_structure/backend/core/route -IE:/NotSelfDAO/app/project_structure/backend/core/task_manager -IE:/NotSelfDAO/app/project_structure/backend/core/transport -IE:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
   OBJECT_DIR = core\CMakeFiles\core.dir
   OBJECT_FILE_DIR = core\CMakeFiles\core.dir\registrar
   TARGET_COMPILE_PDB = core\CMakeFiles\core.dir\core.pdb
   TARGET_PDB = lib\core.pdb
   TARGET_SUPPORT_DIR = core\CMakeFiles\core.dir
 
-build core/CMakeFiles/core.dir/registrar/HierarchicalRegistry.cpp.obj: CXX_COMPILER__core_unscanned_Debug E$:/NotSelfDAO/app/pic_gallery/backend/core/registrar/HierarchicalRegistry.cpp || cmake_object_order_depends_target_core
+build core/CMakeFiles/core.dir/registrar/HierarchicalRegistry.cpp.obj: CXX_COMPILER__core_unscanned_Debug E$:/NotSelfDAO/app/project_structure/backend/core/registrar/HierarchicalRegistry.cpp || cmake_object_order_depends_target_core
   CONFIG = Debug
   DEFINES = -DCPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO
   DEP_FILE = core\CMakeFiles\core.dir\registrar\HierarchicalRegistry.cpp.obj.d
   FLAGS = -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic
-  INCLUDES = -IE:/NotSelfDAO/app/pic_gallery/backend/core -IE:/NotSelfDAO/app/pic_gallery/backend/core/registrar -IE:/NotSelfDAO/app/pic_gallery/backend/core/repository -IE:/NotSelfDAO/app/pic_gallery/backend/core/route -IE:/NotSelfDAO/app/pic_gallery/backend/core/task_manager -IE:/NotSelfDAO/app/pic_gallery/backend/core/transport -IE:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
+  INCLUDES = -IE:/NotSelfDAO/app/project_structure/backend/core -IE:/NotSelfDAO/app/project_structure/backend/core/registrar -IE:/NotSelfDAO/app/project_structure/backend/core/repository -IE:/NotSelfDAO/app/project_structure/backend/core/route -IE:/NotSelfDAO/app/project_structure/backend/core/task_manager -IE:/NotSelfDAO/app/project_structure/backend/core/transport -IE:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
   OBJECT_DIR = core\CMakeFiles\core.dir
   OBJECT_FILE_DIR = core\CMakeFiles\core.dir\registrar
   TARGET_COMPILE_PDB = core\CMakeFiles\core.dir\core.pdb
   TARGET_PDB = lib\core.pdb
   TARGET_SUPPORT_DIR = core\CMakeFiles\core.dir
 
-build core/CMakeFiles/core.dir/route/RouteKey.cpp.obj: CXX_COMPILER__core_unscanned_Debug E$:/NotSelfDAO/app/pic_gallery/backend/core/route/RouteKey.cpp || cmake_object_order_depends_target_core
+build core/CMakeFiles/core.dir/route/RouteKey.cpp.obj: CXX_COMPILER__core_unscanned_Debug E$:/NotSelfDAO/app/project_structure/backend/core/route/RouteKey.cpp || cmake_object_order_depends_target_core
   CONFIG = Debug
   DEFINES = -DCPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO
   DEP_FILE = core\CMakeFiles\core.dir\route\RouteKey.cpp.obj.d
   FLAGS = -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic
-  INCLUDES = -IE:/NotSelfDAO/app/pic_gallery/backend/core -IE:/NotSelfDAO/app/pic_gallery/backend/core/registrar -IE:/NotSelfDAO/app/pic_gallery/backend/core/repository -IE:/NotSelfDAO/app/pic_gallery/backend/core/route -IE:/NotSelfDAO/app/pic_gallery/backend/core/task_manager -IE:/NotSelfDAO/app/pic_gallery/backend/core/transport -IE:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
+  INCLUDES = -IE:/NotSelfDAO/app/project_structure/backend/core -IE:/NotSelfDAO/app/project_structure/backend/core/registrar -IE:/NotSelfDAO/app/project_structure/backend/core/repository -IE:/NotSelfDAO/app/project_structure/backend/core/route -IE:/NotSelfDAO/app/project_structure/backend/core/task_manager -IE:/NotSelfDAO/app/project_structure/backend/core/transport -IE:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
   OBJECT_DIR = core\CMakeFiles\core.dir
   OBJECT_FILE_DIR = core\CMakeFiles\core.dir\route
   TARGET_COMPILE_PDB = core\CMakeFiles\core.dir\core.pdb
   TARGET_PDB = lib\core.pdb
   TARGET_SUPPORT_DIR = core\CMakeFiles\core.dir
 
-build core/CMakeFiles/core.dir/route/SymbolTable.cpp.obj: CXX_COMPILER__core_unscanned_Debug E$:/NotSelfDAO/app/pic_gallery/backend/core/route/SymbolTable.cpp || cmake_object_order_depends_target_core
+build core/CMakeFiles/core.dir/route/SymbolTable.cpp.obj: CXX_COMPILER__core_unscanned_Debug E$:/NotSelfDAO/app/project_structure/backend/core/route/SymbolTable.cpp || cmake_object_order_depends_target_core
   CONFIG = Debug
   DEFINES = -DCPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO
   DEP_FILE = core\CMakeFiles\core.dir\route\SymbolTable.cpp.obj.d
   FLAGS = -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic
-  INCLUDES = -IE:/NotSelfDAO/app/pic_gallery/backend/core -IE:/NotSelfDAO/app/pic_gallery/backend/core/registrar -IE:/NotSelfDAO/app/pic_gallery/backend/core/repository -IE:/NotSelfDAO/app/pic_gallery/backend/core/route -IE:/NotSelfDAO/app/pic_gallery/backend/core/task_manager -IE:/NotSelfDAO/app/pic_gallery/backend/core/transport -IE:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
+  INCLUDES = -IE:/NotSelfDAO/app/project_structure/backend/core -IE:/NotSelfDAO/app/project_structure/backend/core/registrar -IE:/NotSelfDAO/app/project_structure/backend/core/repository -IE:/NotSelfDAO/app/project_structure/backend/core/route -IE:/NotSelfDAO/app/project_structure/backend/core/task_manager -IE:/NotSelfDAO/app/project_structure/backend/core/transport -IE:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
   OBJECT_DIR = core\CMakeFiles\core.dir
   OBJECT_FILE_DIR = core\CMakeFiles\core.dir\route
   TARGET_COMPILE_PDB = core\CMakeFiles\core.dir\core.pdb
   TARGET_PDB = lib\core.pdb
   TARGET_SUPPORT_DIR = core\CMakeFiles\core.dir
 
-build core/CMakeFiles/core.dir/task_manager/BackendTaskPool.cpp.obj: CXX_COMPILER__core_unscanned_Debug E$:/NotSelfDAO/app/pic_gallery/backend/core/task_manager/BackendTaskPool.cpp || cmake_object_order_depends_target_core
+build core/CMakeFiles/core.dir/task_manager/BackendTaskPool.cpp.obj: CXX_COMPILER__core_unscanned_Debug E$:/NotSelfDAO/app/project_structure/backend/core/task_manager/BackendTaskPool.cpp || cmake_object_order_depends_target_core
   CONFIG = Debug
   DEFINES = -DCPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO
   DEP_FILE = core\CMakeFiles\core.dir\task_manager\BackendTaskPool.cpp.obj.d
   FLAGS = -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic
-  INCLUDES = -IE:/NotSelfDAO/app/pic_gallery/backend/core -IE:/NotSelfDAO/app/pic_gallery/backend/core/registrar -IE:/NotSelfDAO/app/pic_gallery/backend/core/repository -IE:/NotSelfDAO/app/pic_gallery/backend/core/route -IE:/NotSelfDAO/app/pic_gallery/backend/core/task_manager -IE:/NotSelfDAO/app/pic_gallery/backend/core/transport -IE:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
+  INCLUDES = -IE:/NotSelfDAO/app/project_structure/backend/core -IE:/NotSelfDAO/app/project_structure/backend/core/registrar -IE:/NotSelfDAO/app/project_structure/backend/core/repository -IE:/NotSelfDAO/app/project_structure/backend/core/route -IE:/NotSelfDAO/app/project_structure/backend/core/task_manager -IE:/NotSelfDAO/app/project_structure/backend/core/transport -IE:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
   OBJECT_DIR = core\CMakeFiles\core.dir
   OBJECT_FILE_DIR = core\CMakeFiles\core.dir\task_manager
   TARGET_COMPILE_PDB = core\CMakeFiles\core.dir\core.pdb
   TARGET_PDB = lib\core.pdb
   TARGET_SUPPORT_DIR = core\CMakeFiles\core.dir
 
-build core/CMakeFiles/core.dir/task_manager/TaskDispatcher.cpp.obj: CXX_COMPILER__core_unscanned_Debug E$:/NotSelfDAO/app/pic_gallery/backend/core/task_manager/TaskDispatcher.cpp || cmake_object_order_depends_target_core
+build core/CMakeFiles/core.dir/task_manager/TaskDispatcher.cpp.obj: CXX_COMPILER__core_unscanned_Debug E$:/NotSelfDAO/app/project_structure/backend/core/task_manager/TaskDispatcher.cpp || cmake_object_order_depends_target_core
   CONFIG = Debug
   DEFINES = -DCPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO
   DEP_FILE = core\CMakeFiles\core.dir\task_manager\TaskDispatcher.cpp.obj.d
   FLAGS = -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic
-  INCLUDES = -IE:/NotSelfDAO/app/pic_gallery/backend/core -IE:/NotSelfDAO/app/pic_gallery/backend/core/registrar -IE:/NotSelfDAO/app/pic_gallery/backend/core/repository -IE:/NotSelfDAO/app/pic_gallery/backend/core/route -IE:/NotSelfDAO/app/pic_gallery/backend/core/task_manager -IE:/NotSelfDAO/app/pic_gallery/backend/core/transport -IE:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
+  INCLUDES = -IE:/NotSelfDAO/app/project_structure/backend/core -IE:/NotSelfDAO/app/project_structure/backend/core/registrar -IE:/NotSelfDAO/app/project_structure/backend/core/repository -IE:/NotSelfDAO/app/project_structure/backend/core/route -IE:/NotSelfDAO/app/project_structure/backend/core/task_manager -IE:/NotSelfDAO/app/project_structure/backend/core/transport -IE:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
   OBJECT_DIR = core\CMakeFiles\core.dir
   OBJECT_FILE_DIR = core\CMakeFiles\core.dir\task_manager
   TARGET_COMPILE_PDB = core\CMakeFiles\core.dir\core.pdb
   TARGET_PDB = lib\core.pdb
   TARGET_SUPPORT_DIR = core\CMakeFiles\core.dir
 
-build core/CMakeFiles/core.dir/transport/HttpTaskServer.cpp.obj: CXX_COMPILER__core_unscanned_Debug E$:/NotSelfDAO/app/pic_gallery/backend/core/transport/HttpTaskServer.cpp || cmake_object_order_depends_target_core
+build core/CMakeFiles/core.dir/transport/HttpTaskServer.cpp.obj: CXX_COMPILER__core_unscanned_Debug E$:/NotSelfDAO/app/project_structure/backend/core/transport/HttpTaskServer.cpp || cmake_object_order_depends_target_core
   CONFIG = Debug
   DEFINES = -DCPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO
   DEP_FILE = core\CMakeFiles\core.dir\transport\HttpTaskServer.cpp.obj.d
   FLAGS = -O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview -Wall -Wextra -Wpedantic
-  INCLUDES = -IE:/NotSelfDAO/app/pic_gallery/backend/core -IE:/NotSelfDAO/app/pic_gallery/backend/core/registrar -IE:/NotSelfDAO/app/pic_gallery/backend/core/repository -IE:/NotSelfDAO/app/pic_gallery/backend/core/route -IE:/NotSelfDAO/app/pic_gallery/backend/core/task_manager -IE:/NotSelfDAO/app/pic_gallery/backend/core/transport -IE:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
+  INCLUDES = -IE:/NotSelfDAO/app/project_structure/backend/core -IE:/NotSelfDAO/app/project_structure/backend/core/registrar -IE:/NotSelfDAO/app/project_structure/backend/core/repository -IE:/NotSelfDAO/app/project_structure/backend/core/route -IE:/NotSelfDAO/app/project_structure/backend/core/task_manager -IE:/NotSelfDAO/app/project_structure/backend/core/transport -IE:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include -isystem E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
   OBJECT_DIR = core\CMakeFiles\core.dir
   OBJECT_FILE_DIR = core\CMakeFiles\core.dir\transport
   TARGET_COMPILE_PDB = core\CMakeFiles\core.dir\core.pdb
@@ -484,7 +484,7 @@ build lib/core.lib: CXX_STATIC_LIBRARY_LINKER__core_Debug core/CMakeFiles/core.d
 # Utility command for package
 
 build core/CMakeFiles/package.util: CUSTOM_COMMAND core/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackConfig.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackConfig.cmake"
   DESC = Run CPack packaging tool...
   pool = console
   restat = 1
@@ -496,7 +496,7 @@ build core/package: phony core/CMakeFiles/package.util
 # Utility command for package_source
 
 build core/CMakeFiles/package_source.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackSourceConfig.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build && E:\my_toolchains\Scoop\apps\cmake\current\bin\cpack.exe --config ./CPackSourceConfig.cmake"
   DESC = Run CPack packaging tool for source...
   pool = console
   restat = 1
@@ -508,7 +508,7 @@ build core/package_source: phony core/CMakeFiles/package_source.util
 # Utility command for edit_cache
 
 build core/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build\core && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake-gui.exe -SE:\NotSelfDAO\app\pic_gallery\backend -BE:\NotSelfDAO\app\pic_gallery\backend\build"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build\core && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake-gui.exe -SE:\NotSelfDAO\app\project_structure\backend -BE:\NotSelfDAO\app\project_structure\backend\build"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -520,7 +520,7 @@ build core/edit_cache: phony core/CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build core/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build\core && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe --regenerate-during-build -SE:\NotSelfDAO\app\pic_gallery\backend -BE:\NotSelfDAO\app\pic_gallery\backend\build"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build\core && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe --regenerate-during-build -SE:\NotSelfDAO\app\project_structure\backend -BE:\NotSelfDAO\app\project_structure\backend\build"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -538,7 +538,7 @@ build core/list_install_components: phony
 # Utility command for install
 
 build core/CMakeFiles/install.util: CUSTOM_COMMAND core/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build\core && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build\core && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -P cmake_install.cmake"
   DESC = Install the project...
   pool = console
   restat = 1
@@ -550,7 +550,7 @@ build core/install: phony core/CMakeFiles/install.util
 # Utility command for install/local
 
 build core/CMakeFiles/install/local.util: CUSTOM_COMMAND core/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build\core && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build\core && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake"
   DESC = Installing only the local directory...
   pool = console
   restat = 1
@@ -562,7 +562,7 @@ build core/install/local: phony core/CMakeFiles/install/local.util
 # Utility command for install/strip
 
 build core/CMakeFiles/install/strip.util: CUSTOM_COMMAND core/all
-  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\pic_gallery\backend\build\core && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
+  COMMAND = C:\Windows\system32\cmd.exe /C "cd /D E:\NotSelfDAO\app\project_structure\backend\build\core && E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake"
   DESC = Installing the project stripped...
   pool = console
   restat = 1
@@ -586,30 +586,30 @@ build core.lib: phony lib/core.lib
 # =============================================================================
 
 #############################################
-# Folder: E:/NotSelfDAO/app/pic_gallery/backend/build
+# Folder: E:/NotSelfDAO/app/project_structure/backend/build
 
-build all: phony bin/backend.exe E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/all E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/all core/all
+build all: phony bin/backend.exe E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/all E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/all core/all
 
 # =============================================================================
 
 #############################################
-# Folder: E:/NotSelfDAO/app/pic_gallery/backend/build/core
+# Folder: E:/NotSelfDAO/app/project_structure/backend/build/core
 
 build core/all: phony lib/core.lib
 
 # =============================================================================
 
 #############################################
-# Folder: E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build
+# Folder: E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/all: phony
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/all: phony
 
 # =============================================================================
 
 #############################################
-# Folder: E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build
+# Folder: E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/all: phony
+build E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/all: phony
 
 # =============================================================================
 # Built-in targets
@@ -618,13 +618,13 @@ build E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.
 #############################################
 # Phony target to force glob verification run.
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/build/CMakeFiles/VerifyGlobs.cmake_force: phony
+build E$:/NotSelfDAO/app/project_structure/backend/build/CMakeFiles/VerifyGlobs.cmake_force: phony
 
 
 #############################################
 # Re-run CMake to check if globbed directories changed.
 
-build E$:/NotSelfDAO/app/pic_gallery/backend/build/CMakeFiles/cmake.verify_globs: VERIFY_GLOBS | E$:/NotSelfDAO/app/pic_gallery/backend/build/CMakeFiles/VerifyGlobs.cmake_force
+build E$:/NotSelfDAO/app/project_structure/backend/build/CMakeFiles/cmake.verify_globs: VERIFY_GLOBS | E$:/NotSelfDAO/app/project_structure/backend/build/CMakeFiles/VerifyGlobs.cmake_force
   pool = console
   restat = 1
 
@@ -632,14 +632,14 @@ build E$:/NotSelfDAO/app/pic_gallery/backend/build/CMakeFiles/cmake.verify_globs
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja E$:/NotSelfDAO/app/pic_gallery/backend/build/cmake_install.cmake E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/cmake_install.cmake E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/cmake_install.cmake E$:/NotSelfDAO/app/pic_gallery/backend/build/core/cmake_install.cmake: RERUN_CMAKE E$:/NotSelfDAO/app/pic_gallery/backend/build/CMakeFiles/cmake.verify_globs | CMakeCache.txt CMakeFiles/4.3.0/CMakeCXXCompiler.cmake CMakeFiles/4.3.0/CMakeRCCompiler.cmake CMakeFiles/4.3.0/CMakeSystem.cmake E$:/NotSelfDAO/app/pic_gallery/backend/build/CMakeFiles/VerifyGlobs.cmake E$:/NotSelfDAO/app/pic_gallery/backend/CMakeLists.txt E$:/NotSelfDAO/app/pic_gallery/backend/cmake/ThirdPartyHandler.cmake E$:/NotSelfDAO/app/pic_gallery/backend/cmake/generated_third_party_config.cmake E$:/NotSelfDAO/app/pic_gallery/backend/core/CMakeLists.txt E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/CMakeLists.txt E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/cmake/FindBrotli.cmake E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/cmake/httplibConfig.cmake.in E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/CMakeLists.txt E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/cmake/config.cmake.in E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/cmake/nlohmann_jsonConfigVersion.cmake.in E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/cmake/pkg-config.pc.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/BasicConfigVersion-SameMinorVersion.cmake.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeCXXInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeCommonLanguageInclude.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDependentOption.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeGenericSystem.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeInitializeConfigs.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeLanguageInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakePackageConfigHelpers.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeRCInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeSystemSpecificInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeSystemSpecificInitialize.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CPack.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CPackComponent.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CheckCXXSourceCompiles.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CheckIncludeFileCXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CheckLibraryExists.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/ExternalProject.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/ExternalProject/shared_internal_commands.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FetchContent.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FetchContent/CMakeLists.cmake.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindGit.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindOpenSSL.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindPackageMessage.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindPkgConfig.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindThreads.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindZLIB.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/GNUInstallDirs.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CMakeCXXLinkerInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CMakeCommonLinkerInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Linker/LLD-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Linker/LLD.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Linker/MSVC.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Linker/Windows-LLD-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Linker/Windows-LLD.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Linker/Windows-MSVC.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows-Clang-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows-Clang.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows-Initialize.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/SelectLibraryConfigurations.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/WriteBasicConfigVersionFile.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Templates/CPackConfig.cmake.in
+build build.ninja E$:/NotSelfDAO/app/project_structure/backend/build/cmake_install.cmake E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/cmake_install.cmake E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/cmake_install.cmake E$:/NotSelfDAO/app/project_structure/backend/build/core/cmake_install.cmake: RERUN_CMAKE E$:/NotSelfDAO/app/project_structure/backend/build/CMakeFiles/cmake.verify_globs | CMakeCache.txt CMakeFiles/4.3.0/CMakeCXXCompiler.cmake CMakeFiles/4.3.0/CMakeRCCompiler.cmake CMakeFiles/4.3.0/CMakeSystem.cmake E$:/NotSelfDAO/app/project_structure/backend/build/CMakeFiles/VerifyGlobs.cmake E$:/NotSelfDAO/app/project_structure/backend/CMakeLists.txt E$:/NotSelfDAO/app/project_structure/backend/cmake/ThirdPartyHandler.cmake E$:/NotSelfDAO/app/project_structure/backend/cmake/generated_third_party_config.cmake E$:/NotSelfDAO/app/project_structure/backend/core/CMakeLists.txt E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/CMakeLists.txt E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/cmake/FindBrotli.cmake E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/cmake/httplibConfig.cmake.in E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/CMakeLists.txt E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/cmake/config.cmake.in E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/cmake/nlohmann_jsonConfigVersion.cmake.in E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/cmake/pkg-config.pc.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/BasicConfigVersion-SameMinorVersion.cmake.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeCXXCompiler.cmake.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeCXXInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeCommonLanguageInclude.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeCompilerIdDetection.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDependentOption.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDetermineCompilerSupport.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeGenericSystem.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeInitializeConfigs.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeLanguageInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeNinjaFindMake.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakePackageConfigHelpers.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeParseImplicitIncludeInfo.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeParseImplicitLinkInfo.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeParseLibraryArchitecture.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeRCCompiler.cmake.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeRCInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeSystem.cmake.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeSystemSpecificInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeSystemSpecificInitialize.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeTestCompilerCommon.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeTestRCCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CPack.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CPackComponent.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CheckCXXSourceCompiles.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CheckIncludeFileCXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CheckLibraryExists.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/ADSP-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/ARMCC-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/ARMClang-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/AppleClang-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Borland-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-CXX-CXXImportStd.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-CXX-FeatureTests.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-CXX-TestableFeatures.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-DetermineCompilerInternal.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-FindBinUtils.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Cray-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/CrayClang-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Diab-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Embarcadero-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Fujitsu-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/GHS-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/HP-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/IAR-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Intel-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/MSVC-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/NVHPC-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/NVIDIA-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/OrangeC-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/PGI-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/PathScale-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Renesas-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/SCO-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/TI-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/TIClang-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Tasking-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Watcom-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/XL-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/ExternalProject.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/ExternalProject/shared_internal_commands.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FetchContent.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FetchContent/CMakeLists.cmake.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindGit.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindOpenSSL.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindPackageMessage.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindPkgConfig.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindThreads.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindZLIB.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/GNUInstallDirs.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CMakeCXXLinkerInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CMakeCommonLinkerInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CMakeInspectCXXLinker.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/FeatureTesting.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Linker/LLD-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Linker/LLD.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Linker/MSVC.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Linker/Windows-LLD-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Linker/Windows-LLD.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Linker/Windows-MSVC.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows-Clang-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows-Clang.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows-Determine-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows-Initialize.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/SelectLibraryConfigurations.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/WriteBasicConfigVersionFile.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Templates/CPackConfig.cmake.in
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build CMakeCache.txt CMakeFiles/4.3.0/CMakeCXXCompiler.cmake CMakeFiles/4.3.0/CMakeRCCompiler.cmake CMakeFiles/4.3.0/CMakeSystem.cmake E$:/NotSelfDAO/app/pic_gallery/backend/build/CMakeFiles/VerifyGlobs.cmake E$:/NotSelfDAO/app/pic_gallery/backend/CMakeLists.txt E$:/NotSelfDAO/app/pic_gallery/backend/cmake/ThirdPartyHandler.cmake E$:/NotSelfDAO/app/pic_gallery/backend/cmake/generated_third_party_config.cmake E$:/NotSelfDAO/app/pic_gallery/backend/core/CMakeLists.txt E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/CMakeLists.txt E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/cmake/FindBrotli.cmake E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/cmake/httplibConfig.cmake.in E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/CMakeLists.txt E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/cmake/config.cmake.in E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/cmake/nlohmann_jsonConfigVersion.cmake.in E$:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/cmake/pkg-config.pc.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/BasicConfigVersion-SameMinorVersion.cmake.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeCXXInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeCommonLanguageInclude.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDependentOption.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeGenericSystem.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeInitializeConfigs.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeLanguageInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakePackageConfigHelpers.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeRCInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeSystemSpecificInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeSystemSpecificInitialize.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CPack.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CPackComponent.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CheckCXXSourceCompiles.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CheckIncludeFileCXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CheckLibraryExists.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/ExternalProject.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/ExternalProject/shared_internal_commands.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FetchContent.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FetchContent/CMakeLists.cmake.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindGit.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindOpenSSL.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindPackageMessage.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindPkgConfig.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindThreads.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindZLIB.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/GNUInstallDirs.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CMakeCXXLinkerInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CMakeCommonLinkerInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Linker/LLD-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Linker/LLD.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Linker/MSVC.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Linker/Windows-LLD-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Linker/Windows-LLD.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Linker/Windows-MSVC.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows-Clang-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows-Clang.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows-Initialize.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/SelectLibraryConfigurations.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/WriteBasicConfigVersionFile.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Templates/CPackConfig.cmake.in: phony
+build CMakeCache.txt CMakeFiles/4.3.0/CMakeCXXCompiler.cmake CMakeFiles/4.3.0/CMakeRCCompiler.cmake CMakeFiles/4.3.0/CMakeSystem.cmake E$:/NotSelfDAO/app/project_structure/backend/build/CMakeFiles/VerifyGlobs.cmake E$:/NotSelfDAO/app/project_structure/backend/CMakeLists.txt E$:/NotSelfDAO/app/project_structure/backend/cmake/ThirdPartyHandler.cmake E$:/NotSelfDAO/app/project_structure/backend/cmake/generated_third_party_config.cmake E$:/NotSelfDAO/app/project_structure/backend/core/CMakeLists.txt E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/CMakeLists.txt E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/cmake/FindBrotli.cmake E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src/cmake/httplibConfig.cmake.in E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/CMakeLists.txt E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/cmake/config.cmake.in E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/cmake/nlohmann_jsonConfigVersion.cmake.in E$:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/cmake/pkg-config.pc.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/BasicConfigVersion-SameMinorVersion.cmake.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeCXXCompiler.cmake.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeCXXCompilerABI.cpp E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeCXXInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeCommonLanguageInclude.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeCompilerIdDetection.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDependentOption.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDetermineCXXCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDetermineCompilerABI.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDetermineCompilerId.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDetermineCompilerSupport.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDetermineRCCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeDetermineSystem.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeFindBinUtils.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeGenericSystem.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeInitializeConfigs.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeLanguageInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeNinjaFindMake.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakePackageConfigHelpers.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeParseImplicitIncludeInfo.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeParseImplicitLinkInfo.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeParseLibraryArchitecture.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeRCCompiler.cmake.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeRCInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeSystem.cmake.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeSystemSpecificInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeSystemSpecificInitialize.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeTestCXXCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeTestCompilerCommon.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CMakeTestRCCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CPack.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CPackComponent.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CheckCXXSourceCompiles.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CheckIncludeFileCXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/CheckLibraryExists.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/ADSP-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/ARMCC-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/ARMClang-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/AppleClang-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Borland-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/CMakeCommonCompilerMacros.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-CXX-CXXImportStd.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-CXX-FeatureTests.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-CXX-TestableFeatures.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-DetermineCompilerInternal.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang-FindBinUtils.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Clang.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Cray-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/CrayClang-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Diab-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Embarcadero-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Fujitsu-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/GHS-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/HP-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/IAR-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Intel-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/MSVC-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/NVHPC-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/NVIDIA-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/OrangeC-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/PGI-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/PathScale-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Renesas-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/SCO-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/TI-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/TIClang-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Tasking-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/Watcom-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/XL-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/ExternalProject.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/ExternalProject/shared_internal_commands.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FetchContent.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FetchContent/CMakeLists.cmake.in E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindGit.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindOpenSSL.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindPackageHandleStandardArgs.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindPackageMessage.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindPkgConfig.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindThreads.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/FindZLIB.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/GNUInstallDirs.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CMakeCXXLinkerInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CMakeCommonLinkerInformation.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CMakeDetermineLinkerId.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CMakeInspectCXXLinker.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/CheckSourceCompiles.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Internal/FeatureTesting.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Linker/LLD-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Linker/LLD.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Linker/MSVC.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Linker/Windows-LLD-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Linker/Windows-LLD.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Linker/Windows-MSVC.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows-Clang-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows-Clang.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows-Determine-CXX.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows-Initialize.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/Windows.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/Platform/WindowsPaths.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/SelectLibraryConfigurations.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Modules/WriteBasicConfigVersionFile.cmake E$:/my_toolchains/Scoop/apps/cmake/current/share/cmake-4.3/Templates/CPackConfig.cmake.in: phony
 
 
 #############################################

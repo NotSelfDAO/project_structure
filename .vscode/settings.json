@@ -1,6 +1,6 @@
 {
-    "cmake.sourceDirectory": "E:/NotSelfDAO/app/pic_gallery/backend",
+    "cmake.sourceDirectory": "E:/NotSelfDAO/app/project_structure/backend",
     "clangd.arguments": [
-    "--compile-commands-dir=E:/NotSelfDAO/app/pic_gallery/backend/build"
+    "--compile-commands-dir=E:/NotSelfDAO/app/project_structure/backend/build"
     ]
 }

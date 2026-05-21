@@ -3,9 +3,9 @@
 
 local generate_core_code = {}
 
-local generate_copy_content = require("generate_core_code.generate_copy_content")
+local generate_copy_content = require("backend.scripts.generate_project.generate_core_code.generate_copy_content")
 
-local path_analyse = require("base.path_analyse")
+local path_analyse = require("backend.scripts.base.path_analyse")
 
 local file_name_set = {
     registrar = {

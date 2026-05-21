@@ -1,7 +1,7 @@
 #! /usr/bin/env lua
 -- gateway.lua
 local gateway = {}
-local path_analyse = require("base.path_analyse")
+local path_analyse = require("backend.scripts.base.path_analyse")
 
 local params = {
     project_name = "",

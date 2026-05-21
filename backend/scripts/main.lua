@@ -19,9 +19,9 @@ end
 -- 4. 此时，无论你在哪条路径下唤起该脚本，require 都能精准命中同目录下的模块！
 -- ============================================================================
 
-local path_analyse = require("base.path_analyse")
+local path_analyse = require("backend.scripts.base.path_analyse")
 
-local gateway = require("gateway")
+local gateway = require("backend.scripts.gateway")
 
 local pagetype = {
     welcome = 1,
@@ -130,7 +130,8 @@ local function page_set_params_controller()
             io.flush()
         end
     end
-    gateway.initAll(params.project_name, params.project_version, params.root_path, path_analyse.join("E:\\NotSelfDAO\\app\\pic_gallery\\backend"))
+    params.repo_root_path = path_analyse.get_current_project_path()
+    gateway.initAll(params.project_name, params.project_version, params.root_path, params.repo_root_path)
     return pagetype.choosing
 end
 

@@ -28,8 +28,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(httplib-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/yhirose/cpp-httplib.git" "EXTERNALPROJECT_INTERNAL_ARGUMENT_SEPARATOR" "GIT_TAG" "v0.45.0"
-                    SOURCE_DIR          "E:/NotSelfDAO/app/pic_gallery/backend/third_party//Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
-                    BINARY_DIR          "E:/NotSelfDAO/app/pic_gallery/backend/third_party//Windows-AMD64-Clang-22.1.1-Ninja/httplib-build"
+                    SOURCE_DIR          "E:/NotSelfDAO/app/project_structure/backend/third_party//Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
+                    BINARY_DIR          "E:/NotSelfDAO/app/project_structure/backend/third_party//Windows-AMD64-Clang-22.1.1-Ninja/httplib-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

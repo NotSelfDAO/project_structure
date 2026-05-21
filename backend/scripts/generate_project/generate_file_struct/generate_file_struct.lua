@@ -3,7 +3,7 @@
 
 local generate_file_struct = {}
 
-local path_analyse = require("base.path_analyse")
+local path_analyse = require("backend.scripts.base.path_analyse")
 
 local platform = path_analyse.get_platform()
 

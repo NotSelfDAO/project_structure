@@ -3,7 +3,7 @@
 
 local generate_root_cmakelist = {}
 
-local path_analyse = require("base.path_analyse")
+local path_analyse = require("backend.scripts.base.path_analyse")
 
 ---生成根目录的cmakelists
 ---@param project_name_arg string
@@ -28,7 +28,7 @@ cmake_minimum_required(VERSION 3.25.0)
 
 set(project_name %s)
 
-project(${project_name} VERSION 0.1.0 LANGUAGES CXX)
+project(${project_name} VERSION %s LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -94,6 +94,7 @@ add_subdirectory(core)
 add_subdirectory(domain)
 ]],
     os.date("%Y-%m-%d %H:%M:%S"),
+    project_version_arg,
     project_name_arg
     ))
     file:close()

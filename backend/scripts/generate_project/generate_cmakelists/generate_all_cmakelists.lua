@@ -9,13 +9,13 @@ local params = {
     root_path = ""
 }
 
-local generate_root_cmakelist = require("generate_cmakelists.generate_root_cmakelists")
+local generate_root_cmakelist = require("backend.scripts.generate_project.generate_cmakelists.generate_root_cmakelists")
 
-local generate_core_cmakelists = require("generate_cmakelists.generate_core_cmakelists")
+local generate_core_cmakelists = require("backend.scripts.generate_project.generate_cmakelists.generate_core_cmakelists")
 
-local generate_domain_cmakelists = require("generate_cmakelists.generate_domain_cmakelists")
+local generate_domain_cmakelists = require("backend.scripts.generate_project.generate_cmakelists.generate_domain_cmakelists")
 
-local generate_cmake = require("generate_cmakelists.generate_cmake")
+local generate_cmake = require("backend.scripts.generate_project.generate_cmakelists.generate_cmake")
 
 ---生成cmakelist
 local function generateAll()

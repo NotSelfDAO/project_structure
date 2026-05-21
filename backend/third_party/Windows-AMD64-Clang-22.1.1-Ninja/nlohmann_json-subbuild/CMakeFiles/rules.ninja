@@ -23,7 +23,7 @@ rule CUSTOM_COMMAND
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe --regenerate-during-build -SE:\NotSelfDAO\app\pic_gallery\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\nlohmann_json-subbuild -BE:\NotSelfDAO\app\pic_gallery\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\nlohmann_json-subbuild
+  command = E:\my_toolchains\Scoop\apps\cmake\current\bin\cmake.exe --regenerate-during-build -SE:\NotSelfDAO\app\project_structure\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\nlohmann_json-subbuild -BE:\NotSelfDAO\app\project_structure\backend\third_party\Windows-AMD64-Clang-22.1.1-Ninja\nlohmann_json-subbuild
   description = Re-running CMake...
   generator = 1
 

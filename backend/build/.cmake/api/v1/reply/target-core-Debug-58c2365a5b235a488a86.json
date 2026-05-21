@@ -71,11 +71,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "httplib::@b3822863cded686b0be8"
+			"id" : "httplib::@764d52a40d991454ee5f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "nlohmann_json::@93a59baed9447ca5f7d3"
+			"id" : "nlohmann_json::@a32a20bbfc663f3cc0bb"
 		}
 	],
 	"compileGroups" : 
@@ -110,36 +110,36 @@
 			[
 				{
 					"backtrace" : 5,
-					"path" : "E:/NotSelfDAO/app/pic_gallery/backend/core"
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/core"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "E:/NotSelfDAO/app/pic_gallery/backend/core/registrar"
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/core/registrar"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "E:/NotSelfDAO/app/pic_gallery/backend/core/repository"
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/core/repository"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "E:/NotSelfDAO/app/pic_gallery/backend/core/route"
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/core/route"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "E:/NotSelfDAO/app/pic_gallery/backend/core/task_manager"
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/core/task_manager"
 				},
 				{
 					"backtrace" : 5,
-					"path" : "E:/NotSelfDAO/app/pic_gallery/backend/core/transport"
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/core/transport"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include"
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
 				}
 			],
 			"language" : "CXX",
@@ -172,11 +172,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "httplib::@b3822863cded686b0be8"
+			"id" : "httplib::@764d52a40d991454ee5f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "nlohmann_json::@93a59baed9447ca5f7d3"
+			"id" : "nlohmann_json::@a32a20bbfc663f3cc0bb"
 		}
 	],
 	"linkLibraries" : 
@@ -187,11 +187,11 @@
 		},
 		{
 			"backtrace" : 2,
-			"id" : "httplib::@b3822863cded686b0be8"
+			"id" : "httplib::@764d52a40d991454ee5f"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "nlohmann_json::@93a59baed9447ca5f7d3"
+			"id" : "nlohmann_json::@a32a20bbfc663f3cc0bb"
 		}
 	],
 	"name" : "core",

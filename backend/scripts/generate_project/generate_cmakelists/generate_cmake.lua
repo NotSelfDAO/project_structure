@@ -3,7 +3,7 @@
 
 local generate_cmake = {}
 
-local path_analyse = require("base.path_analyse")   
+local path_analyse = require("backend.scripts.base.path_analyse")   
 
 local ThirdPartyHandler_cmake = [[
 function(handle_third_party target_name target_repo target_tag)

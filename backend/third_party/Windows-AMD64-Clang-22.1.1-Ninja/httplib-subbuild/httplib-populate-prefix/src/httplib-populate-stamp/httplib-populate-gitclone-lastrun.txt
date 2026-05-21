@@ -3,9 +3,9 @@
 # No other meaning or use of this file is supported.
 
 method=git
-command=E:/my_toolchains/Scoop/apps/cmake/current/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/tmp/httplib-populate-gitclone.cmake
-source_dir=E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
-work_dir=E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja
+command=E:/my_toolchains/Scoop/apps/cmake/current/bin/cmake.exe;-DCMAKE_MESSAGE_LOG_LEVEL=VERBOSE;-P;E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-subbuild/httplib-populate-prefix/tmp/httplib-populate-gitclone.cmake
+source_dir=E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src
+work_dir=E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja
 repository=https://github.com/yhirose/cpp-httplib.git
 remote=origin
 init_submodules=TRUE

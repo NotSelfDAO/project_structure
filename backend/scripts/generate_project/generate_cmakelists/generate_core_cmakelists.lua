@@ -3,7 +3,7 @@
 
 local generate_core_cmakelists = {}
 
-local path_analyse = require("base.path_analyse")
+local path_analyse = require("backend.scripts.base.path_analyse")
 
 ---生成核心区域cmakelist
 ---@param project_name_arg string

@@ -41,13 +41,13 @@
 		"major" : 2,
 		"minor" : 10
 	},
-	"id" : "Threads::Threads::@b3822863cded686b0be8",
+	"id" : "Threads::Threads::@764d52a40d991454ee5f",
 	"imported" : true,
 	"local" : true,
 	"name" : "Threads::Threads",
 	"paths" : 
 	{
-		"build" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build",
+		"build" : "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build",
 		"source" : "third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
 	},
 	"sources" : [],

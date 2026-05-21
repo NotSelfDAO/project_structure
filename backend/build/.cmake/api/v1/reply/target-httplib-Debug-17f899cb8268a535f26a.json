@@ -36,19 +36,19 @@
 		"major" : 2,
 		"minor" : 10
 	},
-	"id" : "httplib::@b3822863cded686b0be8",
+	"id" : "httplib::@764d52a40d991454ee5f",
 	"interfaceCompileDependencies" : 
 	[
 		{
 			"backtrace" : 2,
-			"id" : "Threads::Threads::@b3822863cded686b0be8"
+			"id" : "Threads::Threads::@764d52a40d991454ee5f"
 		}
 	],
 	"interfaceLinkLibraries" : 
 	[
 		{
 			"backtrace" : 2,
-			"id" : "Threads::Threads::@b3822863cded686b0be8"
+			"id" : "Threads::Threads::@764d52a40d991454ee5f"
 		},
 		{
 			"backtrace" : 2,
@@ -62,7 +62,7 @@
 	"name" : "httplib",
 	"paths" : 
 	{
-		"build" : "E:/NotSelfDAO/app/pic_gallery/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build",
+		"build" : "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build",
 		"source" : "third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
 	},
 	"sources" : [],

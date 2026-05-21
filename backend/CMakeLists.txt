@@ -46,7 +46,7 @@ message(STATUS "[CMake] Triggering Lua to generate build infrastructure...")
 set(GENERATED_CMAKE_FILE "${CMAKE_CURRENT_SOURCE_DIR}/cmake/generated_third_party_config.cmake")
 
 execute_process(
-    COMMAND "${LUA_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/scripts/generate_third_party_config.lua" "${GENERATED_CMAKE_FILE}"
+    COMMAND "${LUA_EXECUTABLE}" "${CMAKE_SOURCE_DIR}/scripts/running_generate/generate_third_party_config.lua" "${GENERATED_CMAKE_FILE}"
     RESULT_VARIABLE LUA_RETURN_CODE
 )
 
