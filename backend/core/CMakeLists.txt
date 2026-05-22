@@ -12,6 +12,7 @@ find_package(Threads REQUIRED)
 
 
 file(GLOB_RECURSE BACKEND_SOURCES CONFIGURE_DEPENDS
+	${CMAKE_CURRENT_SOURCE_DIR}/app/*.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/registrar/*.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/repository/*.cpp
 	${CMAKE_CURRENT_SOURCE_DIR}/route/*.cpp
@@ -34,6 +35,8 @@ target_include_directories(
 	${CMAKE_CURRENT_SOURCE_DIR}/route
 	${CMAKE_CURRENT_SOURCE_DIR}/task_manager
 	${CMAKE_CURRENT_SOURCE_DIR}/transport
+	${CMAKE_CURRENT_SOURCE_DIR}/api
+	${CMAKE_CURRENT_SOURCE_DIR}/app
 )
 
 target_link_libraries(

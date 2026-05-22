@@ -34,6 +34,7 @@ function gateway.initAll(project_name_arg, project_version_arg, root_path_arg, r
     gateway.initFileStruct(params.project_name, params.root_path)
     gateway.initCoreCode(params.repo_root_path, params.project_name, project_root)
     gateway.initCmakelists(params.project_name, params.project_version, project_root)
+    gateway.initDocs(params.repo_root_path, params.project_name, project_root)
 end
 
 local generate_file_struct = require("backend.scripts.generate_project.generate_file_struct.generate_file_struct")
@@ -43,10 +44,10 @@ function gateway.initFileStruct(project_name_arg, root_path_arg)
     generate_file_struct.init(project_name_arg, root_path_arg)
 end
 
-local generate_core_code = require("backend.scripts.generate_project.generate_core_code.generate_core_code")
+local generate_all_code = require("backend.scripts.generate_project.generate_core_code.generate_all_code")
 function gateway.initCoreCode(repo_root_path_arg, project_name_arg, root_path_arg)
     assert(type(repo_root_path_arg) == "string" and type(project_name_arg) == "string" and type(root_path_arg) == "string", "Repo root path, project name, and root path must be strings.")
-    generate_core_code.init(repo_root_path_arg, project_name_arg, root_path_arg)
+    generate_all_code.init(repo_root_path_arg, project_name_arg, root_path_arg)
 end
 
 local generate_all_cmakelists = require("backend.scripts.generate_project.generate_cmakelists.generate_all_cmakelists")
@@ -54,6 +55,13 @@ local generate_all_cmakelists = require("backend.scripts.generate_project.genera
 function gateway.initCmakelists(project_name_arg, project_version_arg, root_path_arg)
     assert(type(project_name_arg) == "string" and type(project_version_arg) == "string" and type(root_path_arg) == "string", "Project name, version, and root path must be strings.")
     generate_all_cmakelists.init(project_name_arg, project_version_arg, root_path_arg)
+end
+
+local generate_docs = require("backend.scripts.generate_project.generate_docs.generate_docs")
+
+function gateway.initDocs(repo_root_path_arg, project_name_arg, root_path_arg)
+    assert(type(repo_root_path_arg) == "string" and type(project_name_arg) == "string" and type(root_path_arg) == "string", "Repo root path, project name, and root path must be strings.")
+    generate_docs.init(repo_root_path_arg, project_name_arg, root_path_arg)
 end
 
 local build = require("backend.scripts.build_project.build")

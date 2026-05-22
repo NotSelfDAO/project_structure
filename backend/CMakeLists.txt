@@ -19,7 +19,6 @@ add_executable(${project_name} main.cpp)
 target_include_directories(${project_name} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
 )
-
 # 加载第三方库处理函数
 include(cmake/ThirdPartyHandler.cmake)
 include(FetchContent)
@@ -67,6 +66,4 @@ endif()
 message(STATUS "[CMake] Infrastructure configured successfully. Ready to build.")
 
 add_subdirectory(core)
-
-# 你要添加的自己实现的其他装有子模块的子目录
-# add_subdirectory()
+add_subdirectory(domain)

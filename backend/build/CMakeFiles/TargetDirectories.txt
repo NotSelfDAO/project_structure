@@ -32,3 +32,11 @@ E:/NotSelfDAO/app/project_structure/backend/build/core/CMakeFiles/list_install_c
 E:/NotSelfDAO/app/project_structure/backend/build/core/CMakeFiles/install.dir
 E:/NotSelfDAO/app/project_structure/backend/build/core/CMakeFiles/install/local.dir
 E:/NotSelfDAO/app/project_structure/backend/build/core/CMakeFiles/install/strip.dir
+E:/NotSelfDAO/app/project_structure/backend/build/domain/CMakeFiles/package.dir
+E:/NotSelfDAO/app/project_structure/backend/build/domain/CMakeFiles/package_source.dir
+E:/NotSelfDAO/app/project_structure/backend/build/domain/CMakeFiles/edit_cache.dir
+E:/NotSelfDAO/app/project_structure/backend/build/domain/CMakeFiles/rebuild_cache.dir
+E:/NotSelfDAO/app/project_structure/backend/build/domain/CMakeFiles/list_install_components.dir
+E:/NotSelfDAO/app/project_structure/backend/build/domain/CMakeFiles/install.dir
+E:/NotSelfDAO/app/project_structure/backend/build/domain/CMakeFiles/install/local.dir
+E:/NotSelfDAO/app/project_structure/backend/build/domain/CMakeFiles/install/strip.dir

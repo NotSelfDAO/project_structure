@@ -89,9 +89,8 @@ endif()
 message(STATUS "[CMake] Infrastructure configured successfully. Ready to build.")
 
 add_subdirectory(core)
+add_subdirectory(domain) 
 
-# 你要添加的自己实现的其他装有子模块的子目录
-add_subdirectory(domain)
 ]],
     os.date("%Y-%m-%d %H:%M:%S"),
     project_version_arg,

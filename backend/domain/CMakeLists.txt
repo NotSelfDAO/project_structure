@@ -1,0 +1,7 @@
+file(GLOB_RECURSE DOMAIN_HANDLER_SOURCES CONFIGURE_DEPENDS
+    ${CMAKE_CURRENT_SOURCE_DIR}/handlers/*.cpp
+)
+
+target_sources(${project_name} PRIVATE
+    ${DOMAIN_HANDLER_SOURCES}
+)

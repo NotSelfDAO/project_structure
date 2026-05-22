@@ -4,7 +4,8 @@
 		"E:/NotSelfDAO/app/project_structure/backend/build/cmake_install.cmake",
 		"E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-build/cmake_install.cmake",
 		"E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-build/cmake_install.cmake",
-		"E:/NotSelfDAO/app/project_structure/backend/build/core/cmake_install.cmake"
+		"E:/NotSelfDAO/app/project_structure/backend/build/core/cmake_install.cmake",
+		"E:/NotSelfDAO/app/project_structure/backend/build/domain/cmake_install.cmake"
 	],
 	"Parallel" : false
 }

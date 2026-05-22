@@ -1,0 +1,40 @@
+#include "../../core/api/BackendDev.h"
+
+namespace
+{
+class TemplateQueryHandler final : public backend_core::v1::domain::QueryHandler
+{
+protected:
+    std::optional<backend_core::v1::domain::DomainError> Validate(
+        const backend_core::v1::TaskRequest& request) const override
+    {
+        if (request.taskId.empty())
+        {
+            return backend_core::v1::domain::DomainError{
+                backend_core::v1::domain::DomainErrorCode::InvalidArgument,
+                "task_id_required",
+                false};
+        }
+        return std::nullopt;
+    }
+
+    backend_core::v1::TaskEnvelope ExecuteQuery(const backend_core::v1::TaskRequest& request) const override
+    {
+        backend_core::v1::ContentItem item;
+        item.uuid = "template-id";
+        item.title = "template-title";
+        item.body = "replace_with_real_business_logic";
+        item.updatedAt = backend_core::v1::domain::CurrentUnixTimeSec();
+        item.version = 1;
+
+        return backend_core::v1::domain::BuildSuccessWithItemEnvelope(request, item, "template_ok");
+    }
+};
+
+// TODO: 把 service/module/func 改成你的真实路由
+AUTO_REGISTER(
+    "template_service",
+    "template_module",
+    "template_func",
+    backend_core::v1::domain::InvokeFrameworkHandler<TemplateQueryHandler>);
+}

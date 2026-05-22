@@ -1,0 +1,282 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "lib/core.lib"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"target_compile_options",
+			"set_compile_options",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"core/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 24,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 42,
+				"parent" : 0
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 70,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 3
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 29,
+				"parent" : 0
+			}
+		]
+	},
+	"codemodelVersion" : 
+	{
+		"major" : 2,
+		"minor" : 10
+	},
+	"compileDependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "Threads::Threads::@57760688d1f824db5d9c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "httplib::@764d52a40d991454ee5f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "nlohmann_json::@a32a20bbfc663f3cc0bb"
+		}
+	],
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-O0 -std=c++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -g -Xclang -gcodeview"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 4,
+					"fragment" : "-Wpedantic"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 2,
+					"define" : "CPPHTTPLIB_USE_NON_BLOCKING_GETADDRINFO"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 5,
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/core"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/core/registrar"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/core/repository"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/core/route"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/core/task_manager"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/core/transport"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/core/api"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/core/app"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/nlohmann_json-src/include"
+				},
+				{
+					"backtrace" : 2,
+					"isSystem" : true,
+					"path" : "E:/NotSelfDAO/app/project_structure/backend/third_party/Windows-AMD64-Clang-22.1.1-Ninja/httplib-src"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					2
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		}
+	],
+	"id" : "core::@57760688d1f824db5d9c",
+	"interfaceLinkLibraries" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "Threads::Threads::@57760688d1f824db5d9c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "httplib::@764d52a40d991454ee5f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "nlohmann_json::@a32a20bbfc663f3cc0bb"
+		}
+	],
+	"linkLibraries" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "Threads::Threads::@57760688d1f824db5d9c"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "httplib::@764d52a40d991454ee5f"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "nlohmann_json::@a32a20bbfc663f3cc0bb"
+		}
+	],
+	"name" : "core",
+	"nameOnDisk" : "core.lib",
+	"paths" : 
+	{
+		"build" : "core",
+		"source" : "core"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "core/app/BackendRuntime.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "core/registrar/AutoRegistrar.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "core/registrar/HierarchicalRegistry.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "core/route/RouteKey.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "core/route/SymbolTable.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "core/task_manager/BackendTaskPool.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "core/task_manager/TaskDispatcher.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "core/transport/HttpTaskServer.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

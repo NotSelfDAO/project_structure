@@ -3,11 +3,18 @@
 
 local generate_core_code = {}
 
-local generate_copy_content = require("backend.scripts.generate_project.generate_core_code.generate_copy_content")
+local generate_copy_content = require("backend.scripts.base.generate_copy_content")
 
 local path_analyse = require("backend.scripts.base.path_analyse")
 
 local file_name_set = {
+    api = {
+        "BackendDev.h"
+    },
+    app = {
+        "BackendRuntime.cpp",
+        "BackendRuntime.h",
+    },
     registrar = {
         "AutoRegistrar.cpp",
         "AutoRegistrar.h",
